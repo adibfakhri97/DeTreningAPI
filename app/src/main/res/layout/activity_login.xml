@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.detrening.detrening.Authentication.Login"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="50dp"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:background="@drawable/ah">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/detrening" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/rLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:background="@color/trans">
+
+            <ImageView
+                android:id="@+id/emailogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/emailLogin"
+                android:layout_alignRight="@+id/emailLogin"
+                android:layout_alignTop="@+id/emailLogin"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:src="@drawable/ic_email_black_24dp" />
+
+            <ImageView
+                android:id="@+id/passlogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/emailogo"
+                android:layout_alignStart="@+id/emailogo"
+                android:layout_alignTop="@+id/passwordLogin"
+                android:src="@drawable/ic_security_black_24dp" />
+
+            <EditText
+                android:id="@+id/emailLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="18dp"
+                android:hint="Enter your email"
+                android:textColorHint="@android:color/black"
+                android:textStyle="italic"
+                android:inputType="textEmailAddress"
+                android:shadowColor="@android:color/holo_blue_dark"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/passwordLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/emailLogin"
+                android:layout_marginTop="11dp"
+                android:hint="Enter your password "
+                android:textStyle="italic"
+                android:textColorHint="@android:color/black"
+                android:inputType="textPassword"
+                android:shadowColor="@android:color/holo_blue_dark"
+                android:textColor="@android:color/black"
+                />
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rLL"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            android:text="Login"
+            android:backgroundTint="@color/cyan"
+            android:textStyle="bold"
+            android:onClick="fungsiLogin"/>
+
+        <RelativeLayout
+            android:id="@+id/ttt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnLogin"
+            android:layout_marginTop="15dp"
+
+            android:layout_centerHorizontal="true"
+            android:background="@color/trans"
+            >
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="intentDaftar"
+                android:text="Sign Up Here"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ttt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/trans">
+
+            <TextView
+                android:id="@+id/forgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:onClick="forgotPassword"
+                android:text="Forgot Password?"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

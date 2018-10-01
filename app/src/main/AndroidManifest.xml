@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.detrening.detrening">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".FireApp"
+        android:allowBackup="true"
+        android:icon="@drawable/detrening"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Home.Beranda"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Authentication.Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity
+            android:name=".Authentication.SignUp"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Authentication.resetPassword"
+            android:parentActivityName=".Authentication.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profil.EditProfile"
+            android:parentActivityName=".Profil.ProfilInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FreeChatDir.FreeChat"
+            android:parentActivityName=".Home.Beranda"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Tips.TipsTrik"
+            android:parentActivityName=".Home.Beranda"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Workout.WorkOut"
+            android:parentActivityName=".Home.Beranda"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Program"
+            android:parentActivityName=".Workout.WorkOut"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Workout.ArmWorkout"
+            android:parentActivityName=".Workout.WorkOut"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Workout.AbsWorkout"
+            android:parentActivityName=".Workout.WorkOut"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Workout.LegWorkout"
+            android:parentActivityName=".Workout.WorkOut"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Workout.DetailWorkout"
+            android:parentActivityName=".Workout.WorkOut"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DetailProgram"
+            android:screenOrientation="portrait" />
+        android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Profil.ProfilInfo"
+            android:parentActivityName=".Home.Beranda"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Tips.DetailsActivity"></activity>
+    </application>
+
+</manifest>

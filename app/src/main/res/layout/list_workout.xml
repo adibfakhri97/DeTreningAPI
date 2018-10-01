@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/relll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:outlineProvider="paddedBounds"
+        android:layout_margin="6dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:background="@color/trans">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cyan">
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gifWorkout"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:id="@+id/judulWorkout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/gifWorkout"
+                android:text="Nama gerakan"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

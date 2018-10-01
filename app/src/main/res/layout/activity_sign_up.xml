@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.detrening.detrening.Authentication.SignUp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="50dp"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:background="@drawable/ah">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="250dp"
+            android:layout_height="162dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/detrening"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/rrrt"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:background="@color/trans"
+            android:layout_below="@id/logo"
+            >
+
+            <EditText
+                android:id="@+id/emailDaftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="18dp"
+                android:autofillHints="masukkan email anda"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textStyle="italic"
+                android:textColorHint="@android:color/black"
+                android:shadowColor="@android:color/holo_blue_dark"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/passwordDaftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textStyle="italic"
+                android:layout_below="@+id/emailDaftar"
+                android:layout_marginTop="11dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="@android:color/black"
+                android:shadowColor="@android:color/holo_blue_dark"
+                android:textColor="@android:color/black"
+                />
+
+            <EditText
+                android:id="@+id/repasswordDaftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textStyle="italic"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/passwordDaftar"
+                android:layout_marginTop="11dp"
+                android:hint="Re-Type Password"
+                android:inputType="textPassword"
+                android:textColorHint="@android:color/black"
+                android:shadowColor="@android:color/holo_blue_dark"
+                />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btnDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rrrt"
+            android:layout_marginTop="17dp"
+            android:backgroundTint="@color/cyan"
+            android:onClick="fungsiDaftar"
+            android:text="Daftar" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnDaftar"
+            android:background="@color/trans"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Login here"
+                android:textSize="15dp"
+                android:layout_below="@id/btnDaftar"
+                android:textColor="@android:color/black"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:onClick="intentLogin"/>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

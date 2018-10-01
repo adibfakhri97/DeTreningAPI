@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.detrening.detrening.Profil.ProfilInfo"
+    android:background="@drawable/ah"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relInfo"
+            android:layout_width="match_parent"
+            android:layout_height="218dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/cyan"
+            android:backgroundTint="@color/cyan"
+            android:padding="5dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_account_circle_black_24dp"
+
+                />
+
+            <TextView
+                android:id="@+id/emailInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="android@exampple.com"
+                android:layout_below="@id/circleImageView"
+                android:textAlignment="center"
+                android:paddingTop="5dp"
+                android:textSize="17dp"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:text="Edit Profile"
+                android:textColor="@android:color/black"
+                android:background="@drawable/buttonshape"
+                android:backgroundTint="@android:color/white"/>
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cr"
+        android:orientation="vertical"
+        android:paddingTop="7dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_account_circle_black_24dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/txtY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="17dp"
+                    android:layout_toEndOf="@+id/img"
+                    android:text="Name"
+                    android:textStyle="italic"/>
+
+                <RelativeLayout
+                    android:id="@+id/rr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="84dp"
+                    android:layout_toEndOf="@+id/txtY"
+                    android:padding="10dp"
+                    android:background="@color/cyan"
+                    android:backgroundTint="@color/cyan"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/namaInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:text="DeTrening"
+                        android:textColor="@android:color/black" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_swap_vert_black_24dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/txtX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="17dp"
+                    android:layout_toEndOf="@+id/img1"
+                    android:text="Height"
+                    android:textStyle="italic"/>
+
+                <RelativeLayout
+                    android:id="@+id/rrc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="84dp"
+                    android:layout_toEndOf="@+id/txtX"
+                    android:padding="10dp"
+                    android:background="@color/cyan"
+                    android:backgroundTint="@color/cyan">
+
+                    <TextView
+                        android:id="@+id/tinggiInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:text="000"
+                        android:textColor="@android:color/black" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_swap_horiz_black_24dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/txtZ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="17dp"
+                    android:layout_toEndOf="@+id/img2"
+                    android:text="Weight"
+                    android:textStyle="italic"/>
+
+                <RelativeLayout
+                    android:id="@+id/rrv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="84dp"
+                    android:layout_toEndOf="@+id/txtZ"
+                    android:padding="10dp"
+                    android:background="@color/cyan"
+                    android:backgroundTint="@color/cyan">
+
+                    <TextView
+                        android:id="@+id/beratInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:text="000"
+                        android:textColor="@android:color/black" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_whatshot_black_24dp" />
+
+                <TextView
+                    android:id="@+id/txtB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="17dp"
+                    android:layout_toEndOf="@+id/img3"
+                    android:text="Your ideal weight 00 Kg"
+                    android:textStyle="italic" />
+
+                <RadioGroup
+                    android:id="@+id/rB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="84dp"
+                    android:layout_toEndOf="@+id/txtB">
+
+                    <RadioButton
+                        android:id="@+id/LK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/PR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female" />
+                </RadioGroup>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

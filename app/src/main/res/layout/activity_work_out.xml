@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.detrening.detrening.Workout.WorkOut"
+    android:background="@drawable/ah"
+    android:padding="11dp"
+    >
+
+    <Button
+        android:id="@+id/btnProg"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Program"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="@color/cyan"/>
+
+    <RelativeLayout
+        android:id="@+id/relWork"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnProg"
+        android:layout_centerHorizontal="true"
+        >
+        <Button
+            android:id="@+id/btnArm"
+            android:layout_width="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="85dp"
+            android:layout_marginTop="35dp"
+            android:text="Arm Workout"
+            android:textColor="@android:color/white"
+            android:background="@drawable/buttonshape"
+            android:backgroundTint="@color/navy"/>
+
+        <Button
+            android:id="@+id/btnAbs"
+            android:layout_width="250dp"
+            android:layout_height="85dp"
+
+            android:layout_alignStart="@+id/btnArm"
+            android:layout_centerVertical="true"
+            android:background="@drawable/buttonshape"
+            android:backgroundTint="@color/navy"
+            android:text="Abs Workout"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnLeg"
+            android:layout_width="250dp"
+            android:layout_height="85dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/btnAbs"
+            android:layout_marginBottom="41dp"
+            android:background="@drawable/buttonshape"
+            android:backgroundTint="@color/navy"
+            android:text="Leg Workout"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
